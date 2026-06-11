@@ -1,1 +1,6 @@
-
+services:
+  - type: worker
+    name: studybot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python study_log_bot.py
